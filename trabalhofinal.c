@@ -13,9 +13,8 @@ void relatoriogeral(){
       for(j=0;j<10;j++){
           if(pedmenor[i][j]!=0){
               printf("\nOs pedidos com menos de 1000kg foram: ");
-              printf("\nCliente %d\t pedido %d ",i+1,j+1);
-              
-            }     
+              printf("\nCliente %d\t pedido %d ",i+1,j+1);         
+          }     
       }
      } 
 }
@@ -32,8 +31,7 @@ void relatorioped(){
   printf("Informe o número do pedido\n");
   scanf("%d",&n);
     if(mtipo[ID-1][n-1]==1){
-      printf(" Tipo do Produto: Argamassa AC3 20kg\n");
-        
+      printf(" Tipo do Produto: Argamassa AC3 20kg\n");        
     }
     else{
         if(mtipo[ID-1][n-1]==2){
@@ -44,7 +42,6 @@ void relatorioped(){
         }
     }
       
-
   printf("Quantidade do produto: %d \n",quant[ID-1][n-1]);
   
   if(cdd[ID-1][n-1]==1){
@@ -53,16 +50,10 @@ void relatorioped(){
     else{
   printf("Cidade de Porto Nacional\n");
     }
-  
-  
-
   printf("Frete a ser pago $ %d ,00\n\n\n",frete[ID-1][n-1]);
     
 }
     
-  
-
-
 int main() {
   setlocale(LC_ALL,"Portuguese");
   int op;
